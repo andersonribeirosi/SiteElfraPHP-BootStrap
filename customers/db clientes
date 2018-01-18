@@ -1,0 +1,17 @@
+CREATE TABLE clientes (
+  id int(11) NOT NULL,
+  cliente varchar(255) NOT NULL,
+  city varchar(100) NOT NULL,
+  state varchar(100) NOT NULL
+);
+
+ALTER TABLE clientes
+  ADD PRIMARY KEY (id);
+  
+ALTER TABLE clientes
+  MODIFY id int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1;
+
+
+
+  INSERT INTO `clientes` (`id`, `cliente`, `city`, `state`) 
+VALUES ('0', 'Eletropolo Eletricidade Ltda.', 'Campina Grande', 'Paraiba');
